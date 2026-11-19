@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SuperDoList. – To-Do Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- OUTER GRID: menu (left) + main (right) -->
+  <div class="window">
+
+    <!-- MENU -->
+    <nav class="menu">
+      <a class="brand" href="#"><i></i><i></i></span>SuperDoList.</a>
+      <ul class="menu-links">
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">Today</a></li>
+        <li><a href="#">Upcoming</a></li>
+        <li><a href="#">Completed</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+      <a class="btn-primary" href="#">Add task</a>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="greeting">
+          <h1><span class="grad">Good morning,</span> Chonh Toch</h1>
+          <p>Thursday, 19 November. You have 5 tasks due today.</p>
+        </div>
+        <input class="search" type="search" placeholder="Search tasks...">
+        <div class="avatar">C</div>
+      </header>
+
+      <!-- INNER GRID: cards -->
+      <main class="cards">
+
+        <section class="glass stat">
+          <p class="stat-label">Total tasks</p>
+          <p class="stat-value">24</p>
+          <p class="stat-note">In all lists</p>
+        </section>
+
+        <section class="glass stat highlight">
+          <p class="stat-label">Due today</p>
+          <p class="stat-value">5</p>
+          <p class="stat-note">2 are high priority</p>
+        </section>
+
+        <section class="glass stat">
+          <p class="stat-label">Completed</p>
+          <p class="stat-value">15</p>
+          <p class="stat-note">63% of all tasks</p>
+        </section>
+
+        <section class="glass stat">
+          <p class="stat-label">Overdue</p>
+          <p class="stat-value">2</p>
+          <p class="stat-note">Needs attention</p>
+        </section>
+
+        <!-- Graph 1: bar chart -->
+        <section class="glass c-chart">
+          <h2>Tasks completed this week</h2>
+          <div class="chart">
+            <div class="bar" style="height: 40%"><b>4</b><span>Mon</span></div>
+            <div class="bar" style="height: 65%"><b>6</b><span>Tue</span></div>
+            <div class="bar" style="height: 30%"><b>3</b><span>Wed</span></div>
+            <div class="bar" style="height: 85%"><b>8</b><span>Thu</span></div>
+            <div class="bar" style="height: 55%"><b>5</b><span>Fri</span></div>
+            <div class="bar top" style="height: 100%"><b>9</b><span>Sat</span></div>
+            <div class="bar" style="height: 20%"><b>2</b><span>Sun</span></div>
+          </div>
+        </section>
+
+        <!-- Graph 2: donut -->
+        <section class="glass c-donut">
+          <h2>Completion</h2>
+          <div class="donut-wrap">
+            <div class="donut"></div>
+            <div class="donut-label"><strong>63%</strong><small>done</small></div>
+          </div>
+        </section>
+
+        <!-- Task list -->
+        <section class="glass dark c-tasks">
+          <h2>Today's tasks</h2>
+          <ul class="tasks">
+            <li><span class="check done"></span><span class="task-name">Finish C programming lab</span><span class="tag high">High</span></li>
+            <li><span class="check"></span><span class="task-name">Submit grid practice</span><span class="tag high">High</span></li>
+            <li><span class="check"></span><span class="task-name">Review database normalization</span><span class="tag medium">Medium</span></li>
+            <li><span class="check"></span><span class="task-name">Prepare project slides</span><span class="tag low">Low</span></li>
+          </ul>
+        </section>
+
+        <!-- Graph 3: progress bars -->
+        <section class="glass c-lists">
+          <h2>Progress by list</h2>
+          <ul class="progress">
+            <li><div class="p-top"><span>Study</span><span>70%</span></div><div class="track"><div class="fill" style="width: 70%"></div></div></li>
+            <li><div class="p-top"><span>Projects</span><span>45%</span></div><div class="track"><div class="fill" style="width: 45%"></div></div></li>
+            <li><div class="p-top"><span>Personal</span><span>90%</span></div><div class="track"><div class="fill" style="width: 90%"></div></div></li>
+          </ul>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© 2026 SuperDolist.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Help</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
